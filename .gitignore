@@ -1,0 +1,33 @@
+# secrets — NEVER commit
+service-account.json
+*.gcp.json
+.env
+.env.*
+google-credentials*.json
+
+# python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.whl
+
+# editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# hermes plan scratch (lives in macro-research, not qpr-autofill)
+.hermes/plans/
+
+# local cycle outputs (keep sources/ and notes/ but ignore generated)
+*.tmp
