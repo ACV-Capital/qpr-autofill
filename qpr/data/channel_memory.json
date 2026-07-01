@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "description": "Per-ticker channel memory seeded from the Q1'26 research cycle. After each cycle, run `qpr update-channel-memory` to update success/failure counts and demote channels that fail 2+ times in a row.",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "last_updated": "2026-07-01"
   },
   "IDX:ACES": {
@@ -949,5 +949,32 @@
     ],
     "tier_3_channels": [],
     "notes": "GSO direct access has been blocked in prior cycles; rely on Reuters + Vietnambiz."
+  },
+  "SET:GLOBAL": {
+    "metric": "sssg",
+    "tier_1_channels": [
+      {
+        "domain": "globalhouse.co.th",
+        "tier": 1,
+        "last_used": "2026-04-15",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "Siam Global House IR"
+      }
+    ],
+    "tier_2_channels": [
+      {
+        "domain": "kaohooninternational.com",
+        "tier": 2,
+        "last_used": "2026-04-15",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "Kaohoon International"
+      }
+    ],
+    "tier_3_channels": [],
+    "notes": "Siam Global House is home improvement, similar coverage pattern to HMPRO."
   }
 }
