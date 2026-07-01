@@ -7,117 +7,365 @@
   "IDX:ACES": {
     "metric": "sssg",
     "tier_1_channels": [
-      {"domain": "bisnis.com",         "tier": 1, "last_used": "2026-04-16", "last_successful": true, "success_count": 3, "consecutive_failures": 0, "source_label": "Bisnis.com (CGS International research)"},
-      {"domain": "acehardware.co.id",  "tier": 1, "last_used": "2026-04-30", "last_successful": true, "success_count": 2, "consecutive_failures": 0, "source_label": "Company IR / press release"}
+      {
+        "domain": "bisnis.com",
+        "tier": 1,
+        "last_used": "2026-07-01",
+        "last_successful": true,
+        "success_count": 4,
+        "consecutive_failures": 0,
+        "source_label": "Bisnis.com (CGS International research)"
+      },
+      {
+        "domain": "acehardware.co.id",
+        "tier": 1,
+        "last_used": "2026-04-30",
+        "last_successful": true,
+        "success_count": 2,
+        "consecutive_failures": 0,
+        "source_label": "Company IR / press release"
+      }
     ],
     "tier_2_channels": [
-      {"domain": "kontan.co.id",       "tier": 2, "last_used": "2026-05-12", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "Kontan (monthly SSSG series)"}
+      {
+        "domain": "kontan.co.id",
+        "tier": 2,
+        "last_used": "2026-05-12",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "Kontan (monthly SSSG series)"
+      }
     ],
     "tier_3_channels": [
-      {"domain": "indopremier.com",    "tier": 3, "last_used": "2026-04-15", "last_successful": false, "success_count": 0, "consecutive_failures": 1, "source_label": "IPOT Sekuritas (broker, cross-check only)"}
+      {
+        "domain": "indopremier.com",
+        "tier": 3,
+        "last_used": "2026-04-15",
+        "last_successful": false,
+        "success_count": 0,
+        "consecutive_failures": 1,
+        "source_label": "IPOT Sekuritas (broker, cross-check only)"
+      }
     ],
-    "notes": "ACES reports SSSG monthly in Kontan; full-year and Q4 in Bisnis citing CGS. Direct company disclosure is sparse — go via Bisnis first."
+    "notes": "ACES reports SSSG monthly in Kontan; full-year and Q4 in Bisnis citing CGS. Direct company disclosure is sparse \u2014 go via Bisnis first."
   },
   "IDX:AMRT": {
     "metric": "sssg",
     "tier_1_channels": [
-      {"domain": "alfamart.co.id",    "tier": 1, "last_used": "2026-05-01", "last_successful": false, "success_count": 0, "consecutive_failures": 1, "source_label": "Alfamart IR (does not typically disclose SSSG)"}
+      {
+        "domain": "alfamart.co.id",
+        "tier": 1,
+        "last_used": "2026-05-01",
+        "last_successful": false,
+        "success_count": 0,
+        "consecutive_failures": 1,
+        "source_label": "Alfamart IR (does not typically disclose SSSG)"
+      }
     ],
     "tier_2_channels": [
-      {"domain": "reuters.com",       "tier": 2, "last_used": "2026-04-15", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "Reuters (Alfamart mgmt quotes)"},
-      {"domain": "paretosaham.com",   "tier": 2, "last_used": "2026-04-15", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "Paretosaham (Indonesian market data)"}
+      {
+        "domain": "reuters.com",
+        "tier": 2,
+        "last_used": "2026-04-15",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "Reuters (Alfamart mgmt quotes)"
+      },
+      {
+        "domain": "paretosaham.com",
+        "tier": 2,
+        "last_used": "2026-04-15",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "Paretosaham (Indonesian market data)"
+      }
     ],
     "tier_3_channels": [
-      {"domain": "indopremier.com",   "tier": 3, "last_used": "2026-04-15", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "IPOT Sekuritas (broker — current public source)"},
-      {"domain": "bi.go.id",          "tier": 3, "last_used": "2026-05-01", "last_successful": false, "success_count": 0, "consecutive_failures": 1, "source_label": "Bank Indonesia (FX context only, not SSSG)"}
+      {
+        "domain": "indopremier.com",
+        "tier": 3,
+        "last_used": "2026-04-15",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "IPOT Sekuritas (broker \u2014 current public source)"
+      },
+      {
+        "domain": "bi.go.id",
+        "tier": 3,
+        "last_used": "2026-05-01",
+        "last_successful": false,
+        "success_count": 0,
+        "consecutive_failures": 1,
+        "source_label": "Bank Indonesia (FX context only, not SSSG)"
+      }
     ],
     "notes": "AMRT (Alfamart) does not disclose SSSG directly. IPOT Sekuritas and CGS are the public sources. Mgmt 2026 target was 4-6%."
   },
   "IDX:MAPI": {
     "metric": "sssg",
     "tier_1_channels": [
-      {"domain": "mapi.id",           "tier": 1, "last_used": "2026-04-30", "last_successful": true, "success_count": 2, "consecutive_failures": 0, "source_label": "MAPI IR / press release"},
-      {"domain": "stockbit.com",      "tier": 1, "last_used": "2026-05-15", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "Stockbit Snip 29850175 (cites MAP Group results)"}
+      {
+        "domain": "mapi.id",
+        "tier": 1,
+        "last_used": "2026-04-30",
+        "last_successful": true,
+        "success_count": 2,
+        "consecutive_failures": 0,
+        "source_label": "MAPI IR / press release"
+      },
+      {
+        "domain": "stockbit.com",
+        "tier": 1,
+        "last_used": "2026-05-15",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "Stockbit Snip 29850175 (cites MAP Group results)"
+      }
     ],
     "tier_2_channels": [
-      {"domain": "indopremier.com",   "tier": 2, "last_used": "2026-04-15", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "IPOT Sekuritas (broker, cross-check)"}
+      {
+        "domain": "indopremier.com",
+        "tier": 2,
+        "last_used": "2026-04-15",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "IPOT Sekuritas (broker, cross-check)"
+      }
     ],
     "tier_3_channels": [
-      {"domain": "avrist.com",        "tier": 3, "last_used": "2026-05-01", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "Avrist Sekuritas (May 2026 PDF, p.25 — SSSG chart)"}
+      {
+        "domain": "avrist.com",
+        "tier": 3,
+        "last_used": "2026-05-01",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "Avrist Sekuritas (May 2026 PDF, p.25 \u2014 SSSG chart)"
+      }
     ],
     "notes": ""
   },
   "IDX:MAPA": {
     "metric": "sssg",
     "tier_1_channels": [
-      {"domain": "mapaktif.com",      "tier": 1, "last_used": "2026-05-15", "last_successful": true, "success_count": 2, "consecutive_failures": 0, "source_label": "MAP Aktif IR"},
-      {"domain": "theiconomics.com",  "tier": 1, "last_used": "2026-05-15", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "The Iconomics (Indonesian business news)"}
+      {
+        "domain": "mapaktif.com",
+        "tier": 1,
+        "last_used": "2026-05-15",
+        "last_successful": true,
+        "success_count": 2,
+        "consecutive_failures": 0,
+        "source_label": "MAP Aktif IR"
+      },
+      {
+        "domain": "theiconomics.com",
+        "tier": 1,
+        "last_used": "2026-05-15",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "The Iconomics (Indonesian business news)"
+      }
     ],
     "tier_2_channels": [
-      {"domain": "stockbit.com",      "tier": 2, "last_used": "2026-05-15", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "Stockbit Snip 29850175"}
+      {
+        "domain": "stockbit.com",
+        "tier": 2,
+        "last_used": "2026-05-15",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "Stockbit Snip 29850175"
+      }
     ],
     "tier_3_channels": [
-      {"domain": "avrist.com",        "tier": 3, "last_used": "2026-05-01", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "Avrist PDF cross-check"}
+      {
+        "domain": "avrist.com",
+        "tier": 3,
+        "last_used": "2026-05-01",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "Avrist PDF cross-check"
+      }
     ],
     "notes": ""
   },
   "IDX:MAPB": {
     "metric": "sssg",
     "tier_1_channels": [
-      {"domain": "mapbogadiperkasa.com", "tier": 1, "last_used": "2026-05-15", "last_successful": false, "success_count": 0, "consecutive_failures": 2, "source_label": "MAP Boga annual report MD&A (definitive if found)"}
+      {
+        "domain": "mapbogadiperkasa.com",
+        "tier": 1,
+        "last_used": "2026-05-15",
+        "last_successful": false,
+        "success_count": 0,
+        "consecutive_failures": 2,
+        "source_label": "MAP Boga annual report MD&A (definitive if found)"
+      }
     ],
     "tier_2_channels": [
-      {"domain": "id.tradingview.com",   "tier": 2, "last_used": "2026-05-15", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "TradingView (Kontan syndicated) — 9M25 SSSG, 4Q25 SSSG"}
+      {
+        "domain": "id.tradingview.com",
+        "tier": 2,
+        "last_used": "2026-05-15",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "TradingView (Kontan syndicated) \u2014 9M25 SSSG, 4Q25 SSSG"
+      }
     ],
     "tier_3_channels": [
-      {"domain": "avrist.com",           "tier": 3, "last_used": "2026-05-01", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "Avrist PDF cross-check"}
+      {
+        "domain": "avrist.com",
+        "tier": 3,
+        "last_used": "2026-05-01",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "Avrist PDF cross-check"
+      }
     ],
     "notes": "FY 2025 SSSG was unresolved in Q1'26 cycle. Need to check MAP Boga annual report or Kontan 4Q25 release."
   },
   "IDX:MIDI": {
     "metric": "sssg",
     "tier_1_channels": [
-      {"domain": "alfamidi.co.id",   "tier": 1, "last_used": "2026-05-01", "last_successful": false, "success_count": 0, "consecutive_failures": 1, "source_label": "Alfamidi IR (no SSSG disclosure)"}
+      {
+        "domain": "alfamidi.co.id",
+        "tier": 1,
+        "last_used": "2026-05-01",
+        "last_successful": false,
+        "success_count": 0,
+        "consecutive_failures": 1,
+        "source_label": "Alfamidi IR (no SSSG disclosure)"
+      }
     ],
     "tier_2_channels": [
-      {"domain": "indopremier.com",  "tier": 2, "last_used": "2026-04-15", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "IPOT Sekuritas"}
+      {
+        "domain": "indopremier.com",
+        "tier": 2,
+        "last_used": "2026-04-15",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "IPOT Sekuritas"
+      }
     ],
     "tier_3_channels": [
-      {"domain": "avrist.com",       "tier": 3, "last_used": "2026-05-01", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "Avrist May 2026 PDF p.25 (1Q26 SSSG 4.6%)"}
+      {
+        "domain": "avrist.com",
+        "tier": 3,
+        "last_used": "2026-05-01",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "Avrist May 2026 PDF p.25 (1Q26 SSSG 4.6%)"
+      }
     ],
     "notes": "Avrist and IPOT are the public sources. Try Indopremier and Avrist in parallel."
   },
   "IDX:FORE": {
     "metric": "sssg",
     "tier_1_channels": [
-      {"domain": "fore.coffee",      "tier": 1, "last_used": "2026-04-30", "last_successful": false, "success_count": 0, "consecutive_failures": 1, "source_label": "Fore Coffee IR"},
-      {"domain": "bareksa.com",      "tier": 1, "last_used": "2026-06-08", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "Bareksa (Q1 2026 SSSG 11%)"}
+      {
+        "domain": "fore.coffee",
+        "tier": 1,
+        "last_used": "2026-04-30",
+        "last_successful": false,
+        "success_count": 0,
+        "consecutive_failures": 1,
+        "source_label": "Fore Coffee IR"
+      },
+      {
+        "domain": "bareksa.com",
+        "tier": 1,
+        "last_used": "2026-06-08",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "Bareksa (Q1 2026 SSSG 11%)"
+      }
     ],
     "tier_2_channels": [],
     "tier_3_channels": [
-      {"domain": "pressrelease.id",  "tier": 3, "last_used": "2026-04-15", "last_successful": false, "success_count": 0, "consecutive_failures": 1, "source_label": "PressRelease.id"}
+      {
+        "domain": "pressrelease.id",
+        "tier": 3,
+        "last_used": "2026-04-15",
+        "last_successful": false,
+        "success_count": 0,
+        "consecutive_failures": 1,
+        "source_label": "PressRelease.id"
+      }
     ],
     "notes": "Fore is a small cap. Bareksa was the only Q1 2026 source. FY 2025 SSSG unresolved."
   },
   "SET:M": {
     "metric": "sssg",
     "tier_1_channels": [
-      {"domain": "mk.co.th",                   "tier": 1, "last_used": "2026-04-30", "last_successful": true, "success_count": 3, "consecutive_failures": 0, "source_label": "MK Restaurant IR (annual report MD&A — definitive source)"}
+      {
+        "domain": "mk.co.th",
+        "tier": 1,
+        "last_used": "2026-04-30",
+        "last_successful": true,
+        "success_count": 3,
+        "consecutive_failures": 0,
+        "source_label": "MK Restaurant IR (annual report MD&A \u2014 definitive source)"
+      }
     ],
     "tier_2_channels": [
-      {"domain": "kaohooninternational.com",   "tier": 2, "last_used": "2026-05-15", "last_successful": true, "success_count": 2, "consecutive_failures": 0, "source_label": "Kaohoon International (FSS research, with mgmt commentary)"},
-      {"domain": "nationthailand.com",         "tier": 2, "last_used": "2026-04-15", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "The Nation Thailand"}
+      {
+        "domain": "kaohooninternational.com",
+        "tier": 2,
+        "last_used": "2026-05-15",
+        "last_successful": true,
+        "success_count": 2,
+        "consecutive_failures": 0,
+        "source_label": "Kaohoon International (FSS research, with mgmt commentary)"
+      },
+      {
+        "domain": "nationthailand.com",
+        "tier": 2,
+        "last_used": "2026-04-15",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "The Nation Thailand"
+      }
     ],
     "tier_3_channels": [],
-    "notes": "MK's company MD&A in the annual report states SSSG verbatim — always check that first."
+    "notes": "MK's company MD&A in the annual report states SSSG verbatim \u2014 always check that first."
   },
   "SET:CPALL": {
     "metric": "sssg",
     "tier_1_channels": [
-      {"domain": "cpall.co.th",                "tier": 1, "last_used": "2026-04-15", "last_successful": true, "success_count": 2, "consecutive_failures": 0, "source_label": "CP All annual report"}
+      {
+        "domain": "cpall.co.th",
+        "tier": 1,
+        "last_used": "2026-04-15",
+        "last_successful": true,
+        "success_count": 2,
+        "consecutive_failures": 0,
+        "source_label": "CP All annual report"
+      }
     ],
     "tier_2_channels": [
-      {"domain": "kaohooninternational.com",   "tier": 2, "last_used": "2026-04-15", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "Kaohoon International"}
+      {
+        "domain": "kaohooninternational.com",
+        "tier": 2,
+        "last_used": "2026-04-15",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "Kaohoon International"
+      }
     ],
     "tier_3_channels": [],
     "notes": ""
@@ -125,23 +373,63 @@
   "SET:CPAXT": {
     "metric": "sssg",
     "tier_1_channels": [
-      {"domain": "cpaxtra.com",                "tier": 1, "last_used": "2026-05-15", "last_successful": true, "success_count": 2, "consecutive_failures": 0, "source_label": "CP Axtra newsroom (Q1 2026 release)"}
+      {
+        "domain": "cpaxtra.com",
+        "tier": 1,
+        "last_used": "2026-05-15",
+        "last_successful": true,
+        "success_count": 2,
+        "consecutive_failures": 0,
+        "source_label": "CP Axtra newsroom (Q1 2026 release)"
+      }
     ],
     "tier_2_channels": [
-      {"domain": "insideretail.asia",          "tier": 2, "last_used": "2026-05-21", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "Inside Retail Asia (Makro/Lotus split SSSG)"}
+      {
+        "domain": "insideretail.asia",
+        "tier": 2,
+        "last_used": "2026-05-21",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "Inside Retail Asia (Makro/Lotus split SSSG)"
+      }
     ],
     "tier_3_channels": [
-      {"domain": "market.sec.or.th",           "tier": 3, "last_used": "2026-05-15", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "SET MD&A (definitive when published; sometimes qualitative)"}
+      {
+        "domain": "market.sec.or.th",
+        "tier": 3,
+        "last_used": "2026-05-15",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "SET MD&A (definitive when published; sometimes qualitative)"
+      }
     ],
-    "notes": "Splits SSSG between Makro (wholesale) and Lotus (retail). FY 2025 SSSG was unresolved in Q1'26 cycle — only 'stable' for Makro."
+    "notes": "Splits SSSG between Makro (wholesale) and Lotus (retail). FY 2025 SSSG was unresolved in Q1'26 cycle \u2014 only 'stable' for Makro."
   },
   "SET:HMPRO": {
     "metric": "sssg",
     "tier_1_channels": [
-      {"domain": "homepro.co.th",              "tier": 1, "last_used": "2026-04-15", "last_successful": true, "success_count": 2, "consecutive_failures": 0, "source_label": "HomePro IR"}
+      {
+        "domain": "homepro.co.th",
+        "tier": 1,
+        "last_used": "2026-04-15",
+        "last_successful": true,
+        "success_count": 2,
+        "consecutive_failures": 0,
+        "source_label": "HomePro IR"
+      }
     ],
     "tier_2_channels": [
-      {"domain": "kaohooninternational.com",   "tier": 2, "last_used": "2026-04-15", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "Kaohoon International"}
+      {
+        "domain": "kaohooninternational.com",
+        "tier": 2,
+        "last_used": "2026-04-15",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "Kaohoon International"
+      }
     ],
     "tier_3_channels": [],
     "notes": ""
@@ -149,10 +437,26 @@
   "SET:BJC": {
     "metric": "sssg",
     "tier_1_channels": [
-      {"domain": "bjc.co.th",                  "tier": 1, "last_used": "2026-04-15", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "Berli Jucker IR"}
+      {
+        "domain": "bjc.co.th",
+        "tier": 1,
+        "last_used": "2026-04-15",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "Berli Jucker IR"
+      }
     ],
     "tier_2_channels": [
-      {"domain": "kaohooninternational.com",   "tier": 2, "last_used": "2026-04-15", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "Kaohoon International"}
+      {
+        "domain": "kaohooninternational.com",
+        "tier": 2,
+        "last_used": "2026-04-15",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "Kaohoon International"
+      }
     ],
     "tier_3_channels": [],
     "notes": ""
@@ -160,10 +464,26 @@
   "SET:CRC": {
     "metric": "sssg",
     "tier_1_channels": [
-      {"domain": "centralretail.com",          "tier": 1, "last_used": "2026-04-15", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "Central Retail IR"}
+      {
+        "domain": "centralretail.com",
+        "tier": 1,
+        "last_used": "2026-04-15",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "Central Retail IR"
+      }
     ],
     "tier_2_channels": [
-      {"domain": "kaohooninternational.com",   "tier": 2, "last_used": "2026-04-15", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "Kaohoon International"}
+      {
+        "domain": "kaohooninternational.com",
+        "tier": 2,
+        "last_used": "2026-04-15",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "Kaohoon International"
+      }
     ],
     "tier_3_channels": [],
     "notes": ""
@@ -171,10 +491,26 @@
   "KLSE:MRDIY": {
     "metric": "sssg",
     "tier_1_channels": [
-      {"domain": "mrdiy.com",                  "tier": 1, "last_used": "2026-04-15", "last_successful": true, "success_count": 2, "consecutive_failures": 0, "source_label": "MR DIY IR"}
+      {
+        "domain": "mrdiy.com",
+        "tier": 1,
+        "last_used": "2026-04-15",
+        "last_successful": true,
+        "success_count": 2,
+        "consecutive_failures": 0,
+        "source_label": "MR DIY IR"
+      }
     ],
     "tier_2_channels": [
-      {"domain": "theedgemalaysia.com",        "tier": 2, "last_used": "2026-04-15", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "The Edge Malaysia"}
+      {
+        "domain": "theedgemalaysia.com",
+        "tier": 2,
+        "last_used": "2026-04-15",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "The Edge Malaysia"
+      }
     ],
     "tier_3_channels": [],
     "notes": ""
@@ -182,10 +518,26 @@
   "KLSE:99SMART": {
     "metric": "sssg",
     "tier_1_channels": [
-      {"domain": "99speedmart.com.my",         "tier": 1, "last_used": "2026-04-15", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "99 Speed Mart IR"}
+      {
+        "domain": "99speedmart.com.my",
+        "tier": 1,
+        "last_used": "2026-04-15",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "99 Speed Mart IR"
+      }
     ],
     "tier_2_channels": [
-      {"domain": "theedgemalaysia.com",        "tier": 2, "last_used": "2026-04-15", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "The Edge Malaysia"}
+      {
+        "domain": "theedgemalaysia.com",
+        "tier": 2,
+        "last_used": "2026-04-15",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "The Edge Malaysia"
+      }
     ],
     "tier_3_channels": [],
     "notes": ""
@@ -193,54 +545,182 @@
   "KLSE:ECOSHOP": {
     "metric": "sssg",
     "tier_1_channels": [
-      {"domain": "ecoshop.com.my",             "tier": 1, "last_used": "2026-04-15", "last_successful": true, "success_count": 2, "consecutive_failures": 0, "source_label": "Eco-Shop (Q1FY26 results PDF)"}
+      {
+        "domain": "ecoshop.com.my",
+        "tier": 1,
+        "last_used": "2026-04-15",
+        "last_successful": true,
+        "success_count": 2,
+        "consecutive_failures": 0,
+        "source_label": "Eco-Shop (Q1FY26 results PDF)"
+      }
     ],
     "tier_2_channels": [
-      {"domain": "theedgemalaysia.com",        "tier": 2, "last_used": "2026-01-07", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "The Edge Malaysia (UOBKH research)"},
-      {"domain": "moomoo.com",                 "tier": 2, "last_used": "2025-11-02", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "Moomoo (Q1FY26 results coverage)"}
+      {
+        "domain": "theedgemalaysia.com",
+        "tier": 2,
+        "last_used": "2026-01-07",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "The Edge Malaysia (UOBKH research)"
+      },
+      {
+        "domain": "moomoo.com",
+        "tier": 2,
+        "last_used": "2025-11-02",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "Moomoo (Q1FY26 results coverage)"
+      }
     ],
     "tier_3_channels": [
-      {"domain": "uobkayhian.com",             "tier": 3, "last_used": "2026-01-07", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "UOB Kay Hian research (cross-check only)"}
+      {
+        "domain": "uobkayhian.com",
+        "tier": 3,
+        "last_used": "2026-01-07",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "UOB Kay Hian research (cross-check only)"
+      }
     ],
     "notes": "1QFY26 SSSG = -12.7% (cited in multiple sources). Q1FY26 = calendar 1Q26 (Malaysia FY-end Dec). Watch for FY-end vs calendar quarter confusion."
   },
   "PSE:SEVN": {
     "metric": "sssg",
     "tier_1_channels": [
-      {"domain": "7-eleven.com.ph",            "tier": 1, "last_used": "2026-04-15", "last_successful": false, "success_count": 0, "consecutive_failures": 1, "source_label": "Philippine Seven IR (annual report MD&A — definitive)"}
+      {
+        "domain": "7-eleven.com.ph",
+        "tier": 1,
+        "last_used": "2026-04-15",
+        "last_successful": false,
+        "success_count": 0,
+        "consecutive_failures": 1,
+        "source_label": "Philippine Seven IR (annual report MD&A \u2014 definitive)"
+      }
     ],
     "tier_2_channels": [
-      {"domain": "insiderph.com",              "tier": 2, "last_used": "2026-04-15", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "InsiderPH (Manila Bulletin)"},
-      {"domain": "philstar.com",               "tier": 2, "last_used": "2026-04-15", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "Philstar (AB Capital research)"},
-      {"domain": "mb.com.ph",                  "tier": 2, "last_used": "2025-11-25", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "Manila Bulletin (9M25 SSSG)"}
+      {
+        "domain": "insiderph.com",
+        "tier": 2,
+        "last_used": "2026-04-15",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "InsiderPH (Manila Bulletin)"
+      },
+      {
+        "domain": "philstar.com",
+        "tier": 2,
+        "last_used": "2026-04-15",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "Philstar (AB Capital research)"
+      },
+      {
+        "domain": "mb.com.ph",
+        "tier": 2,
+        "last_used": "2025-11-25",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "Manila Bulletin (9M25 SSSG)"
+      }
     ],
     "tier_3_channels": [
-      {"domain": "abcapital.com.ph",           "tier": 3, "last_used": "2026-04-15", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "AB Capital research (cross-check)"}
+      {
+        "domain": "abcapital.com.ph",
+        "tier": 3,
+        "last_used": "2026-04-15",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "AB Capital research (cross-check)"
+      }
     ],
     "notes": "Public sources phrase SEVN SSSG approximately ('nearly 1 percent drop'). MD&A is the only precise source. FY 2025 was unresolved in Q1'26 cycle."
   },
   "PSE:PGOLD": {
     "metric": "sssg",
     "tier_1_channels": [
-      {"domain": "puregold.com.ph",            "tier": 1, "last_used": "2026-04-15", "last_successful": true, "success_count": 2, "consecutive_failures": 0, "source_label": "Puregold IR (annual/quarterly report)"}
+      {
+        "domain": "puregold.com.ph",
+        "tier": 1,
+        "last_used": "2026-04-15",
+        "last_successful": true,
+        "success_count": 2,
+        "consecutive_failures": 0,
+        "source_label": "Puregold IR (annual/quarterly report)"
+      }
     ],
     "tier_2_channels": [
-      {"domain": "gmanetwork.com",             "tier": 2, "last_used": "2026-04-07", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "GMA News (FY 2025 results)"},
-      {"domain": "insiderph.com",              "tier": 2, "last_used": "2026-05-15", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "InsiderPH (Q1 2026 results — brand vs consolidated breakdown)"},
-      {"domain": "businessmirror.com.ph",      "tier": 2, "last_used": "2026-04-15", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "Business Mirror"}
+      {
+        "domain": "gmanetwork.com",
+        "tier": 2,
+        "last_used": "2026-04-07",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "GMA News (FY 2025 results)"
+      },
+      {
+        "domain": "insiderph.com",
+        "tier": 2,
+        "last_used": "2026-05-15",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "InsiderPH (Q1 2026 results \u2014 brand vs consolidated breakdown)"
+      },
+      {
+        "domain": "businessmirror.com.ph",
+        "tier": 2,
+        "last_used": "2026-04-15",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "Business Mirror"
+      }
     ],
     "tier_3_channels": [
-      {"domain": "logisticsnews.ph",           "tier": 3, "last_used": "2026-05-15", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "LogisticsNews.ph (Q1 2026 SSSG split)"}
+      {
+        "domain": "logisticsnews.ph",
+        "tier": 3,
+        "last_used": "2026-05-15",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "LogisticsNews.ph (Q1 2026 SSSG split)"
+      }
     ],
-    "notes": "Brand-only (Puregold stores) ≠ consolidated (Puregold + S&R Warehouse Clubs). Always note scope in the cell's Notes column."
+    "notes": "Brand-only (Puregold stores) \u2260 consolidated (Puregold + S&R Warehouse Clubs). Always note scope in the cell's Notes column."
   },
   "HSX:MWG": {
     "metric": "sssg",
     "tier_1_channels": [
-      {"domain": "thegioididong.com",          "tier": 1, "last_used": "2026-04-15", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "Mobile World IR"}
+      {
+        "domain": "thegioididong.com",
+        "tier": 1,
+        "last_used": "2026-04-15",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "Mobile World IR"
+      }
     ],
     "tier_2_channels": [
-      {"domain": "vietnambiz.vn",              "tier": 2, "last_used": "2026-04-15", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "Vietnambiz"}
+      {
+        "domain": "vietnambiz.vn",
+        "tier": 2,
+        "last_used": "2026-04-15",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "Vietnambiz"
+      }
     ],
     "tier_3_channels": [],
     "notes": "Vietnam coverage is thin; expand as needed."
@@ -248,13 +728,53 @@
   "macro:Indonesia": {
     "metric": "gdp_real_yoy",
     "tier_1_channels": [
-      {"domain": "bps.go.id",                  "tier": 1, "last_used": "2026-02-05", "last_successful": true, "success_count": 3, "consecutive_failures": 0, "source_label": "BPS press release (primary statistical agency)"},
-      {"domain": "bi.go.id",                   "tier": 1, "last_used": "2026-04-15", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "Bank Indonesia SEKI tables"}
+      {
+        "domain": "bps.go.id",
+        "tier": 1,
+        "last_used": "2026-02-05",
+        "last_successful": true,
+        "success_count": 3,
+        "consecutive_failures": 0,
+        "source_label": "BPS press release (primary statistical agency)"
+      },
+      {
+        "domain": "bi.go.id",
+        "tier": 1,
+        "last_used": "2026-04-15",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "Bank Indonesia SEKI tables"
+      }
     ],
     "tier_2_channels": [
-      {"domain": "reuters.com",                "tier": 2, "last_used": "2026-02-05", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "Reuters (quotes BPS)"},
-      {"domain": "business-indonesia.org",     "tier": 2, "last_used": "2026-02-05", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "Business Indonesia (BPS commentary)"},
-      {"domain": "databoks.katadata.co.id",    "tier": 2, "last_used": "2026-04-15", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "Databoks Katadata"}
+      {
+        "domain": "reuters.com",
+        "tier": 2,
+        "last_used": "2026-02-05",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "Reuters (quotes BPS)"
+      },
+      {
+        "domain": "business-indonesia.org",
+        "tier": 2,
+        "last_used": "2026-02-05",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "Business Indonesia (BPS commentary)"
+      },
+      {
+        "domain": "databoks.katadata.co.id",
+        "tier": 2,
+        "last_used": "2026-04-15",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "Databoks Katadata"
+      }
     ],
     "tier_3_channels": [],
     "notes": "BPS releases quarterly GDP ~6-8 weeks after quarter-end. Reuters and BI commentary are the next-day cross-checks."
@@ -262,12 +782,44 @@
   "macro:Thailand": {
     "metric": "gdp_real_yoy",
     "tier_1_channels": [
-      {"domain": "nesdc.go.th",                "tier": 1, "last_used": "2026-02-03", "last_successful": true, "success_count": 3, "consecutive_failures": 0, "source_label": "NESDC press release (primary)"},
-      {"domain": "bot.or.th",                  "tier": 1, "last_used": "2026-01-30", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "Bank of Thailand"}
+      {
+        "domain": "nesdc.go.th",
+        "tier": 1,
+        "last_used": "2026-02-03",
+        "last_successful": true,
+        "success_count": 3,
+        "consecutive_failures": 0,
+        "source_label": "NESDC press release (primary)"
+      },
+      {
+        "domain": "bot.or.th",
+        "tier": 1,
+        "last_used": "2026-01-30",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "Bank of Thailand"
+      }
     ],
     "tier_2_channels": [
-      {"domain": "nationthailand.com",         "tier": 2, "last_used": "2026-02-03", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "The Nation Thailand"},
-      {"domain": "kaohooninternational.com",   "tier": 2, "last_used": "2026-02-03", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "Kaohoon International"}
+      {
+        "domain": "nationthailand.com",
+        "tier": 2,
+        "last_used": "2026-02-03",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "The Nation Thailand"
+      },
+      {
+        "domain": "kaohooninternational.com",
+        "tier": 2,
+        "last_used": "2026-02-03",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "Kaohoon International"
+      }
     ],
     "tier_3_channels": [],
     "notes": ""
@@ -275,11 +827,35 @@
   "macro:Philippines": {
     "metric": "gdp_real_yoy",
     "tier_1_channels": [
-      {"domain": "psa.gov.ph",                 "tier": 1, "last_used": "2026-04-15", "last_successful": false, "success_count": 0, "consecutive_failures": 2, "source_label": "PSA (Philippine Statistics Authority)"}
+      {
+        "domain": "psa.gov.ph",
+        "tier": 1,
+        "last_used": "2026-04-15",
+        "last_successful": false,
+        "success_count": 0,
+        "consecutive_failures": 2,
+        "source_label": "PSA (Philippine Statistics Authority)"
+      }
     ],
     "tier_2_channels": [
-      {"domain": "reuters.com",                "tier": 2, "last_used": "2026-04-15", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "Reuters (PSA-sourced)"},
-      {"domain": "businessworld.com.ph",       "tier": 2, "last_used": "2026-04-15", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "Business World"}
+      {
+        "domain": "reuters.com",
+        "tier": 2,
+        "last_used": "2026-04-15",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "Reuters (PSA-sourced)"
+      },
+      {
+        "domain": "businessworld.com.ph",
+        "tier": 2,
+        "last_used": "2026-04-15",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "Business World"
+      }
     ],
     "tier_3_channels": [],
     "notes": "PSA direct access has been blocked in prior cycles; rely on Reuters + BusinessWorld."
@@ -287,12 +863,44 @@
   "macro:Malaysia": {
     "metric": "gdp_real_yoy",
     "tier_1_channels": [
-      {"domain": "dosm.gov.my",                "tier": 1, "last_used": "2026-04-15", "last_successful": false, "success_count": 0, "consecutive_failures": 2, "source_label": "DOSM (Dept of Statistics Malaysia)"},
-      {"domain": "bnm.gov.my",                 "tier": 1, "last_used": "2026-04-15", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "Bank Negara Malaysia"}
+      {
+        "domain": "dosm.gov.my",
+        "tier": 1,
+        "last_used": "2026-04-15",
+        "last_successful": false,
+        "success_count": 0,
+        "consecutive_failures": 2,
+        "source_label": "DOSM (Dept of Statistics Malaysia)"
+      },
+      {
+        "domain": "bnm.gov.my",
+        "tier": 1,
+        "last_used": "2026-04-15",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "Bank Negara Malaysia"
+      }
     ],
     "tier_2_channels": [
-      {"domain": "reuters.com",                "tier": 2, "last_used": "2026-04-15", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "Reuters (DOSM-sourced)"},
-      {"domain": "theedgemalaysia.com",        "tier": 2, "last_used": "2026-04-15", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "The Edge Malaysia"}
+      {
+        "domain": "reuters.com",
+        "tier": 2,
+        "last_used": "2026-04-15",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "Reuters (DOSM-sourced)"
+      },
+      {
+        "domain": "theedgemalaysia.com",
+        "tier": 2,
+        "last_used": "2026-04-15",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "The Edge Malaysia"
+      }
     ],
     "tier_3_channels": [],
     "notes": "DOSM direct access has been blocked in prior cycles; rely on Reuters + Edge + BNM."
@@ -300,12 +908,44 @@
   "macro:Vietnam": {
     "metric": "gdp_real_yoy",
     "tier_1_channels": [
-      {"domain": "gso.gov.vn",                 "tier": 1, "last_used": "2026-04-15", "last_successful": false, "success_count": 0, "consecutive_failures": 2, "source_label": "GSO (General Statistics Office)"},
-      {"domain": "sbv.gov.vn",                 "tier": 1, "last_used": "2026-04-15", "last_successful": false, "success_count": 0, "consecutive_failures": 1, "source_label": "State Bank of Vietnam"}
+      {
+        "domain": "gso.gov.vn",
+        "tier": 1,
+        "last_used": "2026-04-15",
+        "last_successful": false,
+        "success_count": 0,
+        "consecutive_failures": 2,
+        "source_label": "GSO (General Statistics Office)"
+      },
+      {
+        "domain": "sbv.gov.vn",
+        "tier": 1,
+        "last_used": "2026-04-15",
+        "last_successful": false,
+        "success_count": 0,
+        "consecutive_failures": 1,
+        "source_label": "State Bank of Vietnam"
+      }
     ],
     "tier_2_channels": [
-      {"domain": "reuters.com",                "tier": 2, "last_used": "2026-04-15", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "Reuters (GSO-sourced)"},
-      {"domain": "vietnambiz.vn",              "tier": 2, "last_used": "2026-04-15", "last_successful": true, "success_count": 1, "consecutive_failures": 0, "source_label": "Vietnambiz"}
+      {
+        "domain": "reuters.com",
+        "tier": 2,
+        "last_used": "2026-04-15",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "Reuters (GSO-sourced)"
+      },
+      {
+        "domain": "vietnambiz.vn",
+        "tier": 2,
+        "last_used": "2026-04-15",
+        "last_successful": true,
+        "success_count": 1,
+        "consecutive_failures": 0,
+        "source_label": "Vietnambiz"
+      }
     ],
     "tier_3_channels": [],
     "notes": "GSO direct access has been blocked in prior cycles; rely on Reuters + Vietnambiz."
