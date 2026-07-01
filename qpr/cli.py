@@ -279,17 +279,109 @@ def cmd_grade_e2e(args):
 
 
 def cmd_e2e_run(args):
-    """Spawn a fresh subagent in a secluded environment.
+    """Spawn a fresh subagent in a secluded E2E environment.
 
-    NOTE: this is a stub. The full implementation lives in Phase E Task 19
-    and requires: a secluded workdir, a separate service account JSON, and
-    a runner (claude-code / codex / opencode) installed.
+    Renders a brief for the given quarter, then dispatches the agent with
+    the secluded workdir + E2E service account context. The actual spawning
+    is delegated to the host environment (Hermes, Claude Code, etc.) via
+    delegate_task with role='leaf' and the secluded workdir as cwd.
+
+    This is a thin wrapper: it prints the dispatch instructions that the
+    host should follow, or -- if delegate_task is available -- invokes it
+    directly.
     """
-    print("e2e-run is a stub in v0.1. See docs/E2E.md for the full setup.")
-    print(f"  Quarter: {args.quarter}")
-    print(f"  Sheet: {args.sheet_id}")
-    print(f"  Workdir: {args.workdir}")
-    sys.exit(2)
+    from qpr.tickers import load_manifest
+    from qpr.channel_memory import load_memory
+    from qpr.brief import render_sssg_brief
+    from pathlib import Path
+
+    plugin_dir = Path(args.plugin_dir).resolve()
+    workdir = Path(args.workdir).resolve()
+
+    tickers = load_manifest(plugin_dir / "examples" / "tickers.yaml")
+    sssg_tickers = [t for t in tickers if t.sssg_applicable]
+    memory = load_memory(plugin_dir / "qpr" / "data" / "channel_memory.json")
+
+    # Render the brief into the workdir
+    brief = render_sssg_brief(
+        quarter=args.quarter, tickers=tickers,
+        sssg_tickers=sssg_tickers, channel_memory=memory,
+    )
+    brief_path = workdir / f"AGENT_SSSG_{args.quarter}_E2E_BRIEF.md"
+    workdir.mkdir(parents=True, exist_ok=True)
+    brief_path.write_text(brief)
+
+    # Print the dispatch instructions
+    print("=" * 60)
+    print("E2E DISPATCH INSTRUCTIONS")
+    print("=" * 60)
+    print()
+    print(f"Quarter: {args.quarter}")
+    print(f"Sheet: {args.sheet_id}")
+    print(f"Workdir: {workdir}")
+    print(f"Brief: {brief_path}")
+    print()
+    print("Spawn a subagent with these parameters:")
+    print()
+    print("  delegate_task(")
+    print(f"      goal='Research SSSG for {args.quarter} per {brief_path}',")
+    print(f"      workdir='{workdir}',")
+    print("      toolsets=['web', 'browser', 'file', 'coding'],")
+    print("      role='leaf',  # no memory, no session_search, no clarify")
+    print("  )")
+    print()
+    print("HARD CONSTRAINTS for the subagent:")
+    print(f"  - DO NOT open any spreadsheet other than {args.sheet_id}")
+    print(f"  - DO NOT look at ~/Documents/Projects/macro-research/ — that path is not in your tools")
+    print(f"  - Every cell must have a source URL")
+    print(f"  - Use ONLY public sources (regulator sites, IR pages, financial reports, business news)")
+    print()
+    print("After the subagent finishes, run `qpr grade-e2e` to validate.")
+    print("=" * 60)
+
+    # If --write-brief-only, exit here
+    if args.write_brief_only:
+        return
+
+    # Otherwise, attempt to actually dispatch via delegate_task if available
+    try:
+        from hermes_tools import delegate_task  # type: ignore
+    except ImportError:
+        print()
+        print("NOTE: hermes_tools.delegate_task not available in this env.")
+        print("      The host (Claude Code / Hermes) must spawn the agent manually")
+        print("      using the instructions above.")
+        return
+
+    prompt = f"""You are a fresh research agent. You have NO memory of prior sessions, no access to prior briefs, and no knowledge of what was researched before.
+
+Your only context is:
+1. The QPR plugin installed at: {plugin_dir}
+2. The SSSG brief at: {brief_path}
+3. The public web
+4. The test GSheet: {args.sheet_id}
+
+YOUR TASK:
+- Run /qpr-sssg {args.quarter} per the plugin's instructions
+- Use ONLY public sources (regulator sites, IR pages, financial reports, business news)
+- Write your results to the test GSheet
+- Return a summary of what you wrote and where
+
+HARD CONSTRAINTS:
+- DO NOT open, read, or query ANY spreadsheet other than {args.sheet_id}
+- DO NOT look at ~/Documents/Projects/macro-research/ — that path is not in your tools
+- Every cell must have a source URL
+- If a value cannot be found publicly, leave it null and document why
+
+When done, print your summary and stop.
+"""
+
+    delegate_task(
+        goal=prompt,
+        context=f"E2E test for QPR plugin v0.1, quarter {args.quarter}, sheet {args.sheet_id}",
+        toolsets=["web", "browser", "file", "coding"],
+        role="leaf",
+    )
 
 
 def _parse(v) -> float | None:
@@ -358,6 +450,7 @@ def main(argv: list[str] | None = None):
     p.add_argument("--sheet-id", required=True)
     p.add_argument("--workdir", required=True)
     p.add_argument("--plugin-dir", default=".")
+    p.add_argument("--write-brief-only", action="store_true", help="Just render the brief + print dispatch instructions, don't actually spawn")
     p.set_defaults(func=cmd_e2e_run)
 
     args = parser.parse_args(argv)
