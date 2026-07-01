@@ -1,0 +1,149 @@
+# SEA-5 retail ticker manifest for QPR Auto-Fill
+# This is the canonical universe that `qpr run-quarter` iterates over.
+# SSSG research is only run for tickers with sssg_applicable=true.
+# Macro panel entries (banks, telcos) are placeholders for the macro agent.
+
+# Indonesia (IDX)
+- exchange: IDX
+  ticker: ACES
+  company: Ace Hardware Indonesia
+  subsector: specialty retail (home improvement)
+  sssg_applicable: true
+  notes: "Consolidated SSSG via Bisnis/CGS; brand-only SSSG via kontan.co.id monthly"
+- exchange: IDX
+  ticker: AMRT
+  company: Sumber Alfaria Trijaya (Alfamart)
+  subsector: modern trade (minimarket)
+  sssg_applicable: true
+  notes: "No direct SSSG disclosure; IPOT Sekuritas and CGS are public proxies"
+- exchange: IDX
+  ticker: MAPI
+  company: Mitra Adi Perkasa
+  subsector: department store / specialty
+  sssg_applicable: true
+  notes: "Stockbit Snip 29850175; MAPI IR page"
+- exchange: IDX
+  ticker: MIDI
+  company: Midi Utama Indonesia (Alfamidi)
+  subsector: modern trade
+  sssg_applicable: true
+  notes: "No direct disclosure; IPOT/Avrist are proxies"
+- exchange: IDX
+  ticker: MAPA
+  company: Map Aktif Adiperkasa
+  subsector: sports retail
+  sssg_applicable: true
+- exchange: IDX
+  ticker: MAPB
+  company: Map Boga Adiperkasa
+  subsector: F&B (Starbucks, Pizza Hut, etc.)
+  sssg_applicable: true
+  notes: "FY 2025 SSSG was unresolved in Q1'26 cycle — null in channel memory"
+- exchange: IDX
+  ticker: FORE
+  company: Fore Kopi Indonesia
+  subsector: F&B (coffee)
+  sssg_applicable: true
+  notes: "FY 2025 SSSG was unresolved in Q1'26 cycle"
+- exchange: IDX
+  ticker: BBCA
+  company: Bank Central Asia
+  subsector: bank
+  sssg_applicable: false
+- exchange: IDX
+  ticker: TLKM
+  company: Telkom Indonesia
+  subsector: telecom
+  sssg_applicable: false
+
+# Thailand (SET)
+- exchange: SET
+  ticker: CPALL
+  company: CP All (7-Eleven TH)
+  subsector: modern trade
+  sssg_applicable: true
+- exchange: SET
+  ticker: CPAXT
+  company: CP Axtra (Makro, Lotus)
+  subsector: modern trade + wholesale
+  sssg_applicable: true
+  notes: "Splits SSSG between Makro (wholesale) and Lotus (retail)"
+- exchange: SET
+  ticker: HMPRO
+  company: Home Product Center
+  subsector: home improvement
+  sssg_applicable: true
+- exchange: SET
+  ticker: M
+  company: MK Restaurant
+  subsector: F&B
+  sssg_applicable: true
+  notes: "MD&A states SSSG verbatim — definitive"
+- exchange: SET
+  ticker: BJC
+  company: Berli Jucker
+  subsector: modern trade / packaging
+  sssg_applicable: true
+- exchange: SET
+  ticker: GLOBAL
+  company: Siam Global House
+  subsector: home improvement
+  sssg_applicable: true
+- exchange: SET
+  ticker: CRC
+  company: Central Retail
+  subsector: department store
+  sssg_applicable: true
+- exchange: SET
+  ticker: KBANK
+  company: Kasikornbank
+  subsector: bank
+  sssg_applicable: false
+
+# Malaysia (KLSE)
+- exchange: KLSE
+  ticker: MRDIY
+  company: MR DIY Group
+  subsector: modern trade (variety)
+  sssg_applicable: true
+- exchange: KLSE
+  ticker: 99SMART
+  company: 99 Speed Mart
+  subsector: modern trade (minimarket)
+  sssg_applicable: true
+- exchange: KLSE
+  ticker: ECOSHOP
+  company: Eco-Shop Marketing
+  subsector: modern trade (variety)
+  sssg_applicable: true
+- exchange: KLSE
+  ticker: MAYBANK
+  company: Malayan Banking
+  subsector: bank
+  sssg_applicable: false
+
+# Philippines (PSE)
+- exchange: PSE
+  ticker: SEVN
+  company: Philippine Seven (7-Eleven PH)
+  subsector: modern trade
+  sssg_applicable: true
+  notes: "FY 2025 SSSG phrased approximately in public sources; MD&A is only precise source"
+- exchange: PSE
+  ticker: PGOLD
+  company: Puregold Price Club
+  subsector: modern trade (supermarket)
+  sssg_applicable: true
+  notes: "Brand-only (Puregold stores) ≠ consolidated (Puregold + S&R)"
+- exchange: PSE
+  ticker: BPI
+  company: Bank of the Philippine Islands
+  subsector: bank
+  sssg_applicable: false
+
+# Vietnam (HSX)
+- exchange: HSX
+  ticker: MWG
+  company: Mobile World Investment
+  subsector: electronics retail
+  sssg_applicable: true
