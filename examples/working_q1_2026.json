@@ -1,0 +1,83 @@
+{
+  "_description": "Sample working data from the Q4'25 + Q1'26 cycle. Public sources only; no internal notes. Use as a reference output format for new cycles.",
+  "countries": [
+    {
+      "country": "Indonesia",
+      "gdp": {
+        "Q4_2025_yoy_pct": 5.39,
+        "Q1_2026_yoy_pct": 5.61,
+        "sources": [
+          "https://www.bps.go.id/en/pressrelease/2026/02/05/2546/ekonomi-indonesia-tahun-2025-tumbuh-5-11-persen.html",
+          "https://www.business-indonesia.org/news/bps-records-indonesia-s-economic-growth-at-5-11-in-2025",
+          "https://voi.id/en/economy/556419",
+          "https://www.reuters.com/world/asia-pacific/indonesia-q4-gdp-growth-beats-forecast-highest-since-2022-2026-02-05/",
+          "https://databoks.katadata.co.id/en/economics-macro/statistics/69845c125518c/indonesias-economic-growth-strengthened-in-each-q4-during-2023-2025"
+        ]
+      },
+      "private_consumption": {
+        "Q4_2025_yoy_pct": null,
+        "Q1_2026_yoy_pct": null,
+        "sources": []
+      }
+    },
+    {
+      "country": "Thailand",
+      "gdp": {
+        "Q4_2025_yoy_pct": 2.5,
+        "Q1_2026_yoy_pct": null,
+        "sources": [
+          "https://www.nesdc.go.th/wordpress/wp-content/uploads/2026/02/03-PRESS-ENG-2568-Q4.pdf",
+          "https://www.bot.or.th/en/news-and-media/news/news-20260130.html",
+          "https://www.kaohooninternational.com/economics/577031",
+          "https://www.nationthailand.com/business/investment/40062584"
+        ]
+      },
+      "private_consumption": {
+        "Q4_2025_yoy_pct": 3.3,
+        "Q1_2026_yoy_pct": null,
+        "sources": [
+          "https://www.nationthailand.com/business/investment/40062584"
+        ]
+      }
+    },
+    {
+      "country": "Philippines",
+      "gdp": {
+        "Q4_2025_yoy_pct": null,
+        "Q1_2026_yoy_pct": null,
+        "sources": []
+      },
+      "private_consumption": {
+        "Q4_2025_yoy_pct": null,
+        "Q1_2026_yoy_pct": null,
+        "sources": []
+      }
+    },
+    {
+      "country": "Malaysia",
+      "gdp": {
+        "Q4_2025_yoy_pct": null,
+        "Q1_2026_yoy_pct": null,
+        "sources": []
+      },
+      "private_consumption": {
+        "Q4_2025_yoy_pct": null,
+        "Q1_2026_yoy_pct": null,
+        "sources": []
+      }
+    },
+    {
+      "country": "Vietnam",
+      "gdp": {
+        "Q4_2025_yoy_pct": null,
+        "Q1_2026_yoy_pct": null,
+        "sources": []
+      },
+      "private_consumption": {
+        "Q4_2025_yoy_pct": null,
+        "Q1_2026_yoy_pct": null,
+        "sources": []
+      }
+    }
+  ]
+}
