@@ -1,0 +1,23 @@
+{
+  "name": "qpr-autofill",
+  "version": "0.1.0",
+  "description": "Quarterly research auto-fill for SEA-5 macro and retail SSSG. Encodes the ACV Capital research methodology: primary statistical agency sources, company MD&A first, broker research as cross-check only, channel memory to avoid re-discovering sources each quarter.",
+  "author": {
+    "name": "ACV Capital"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/ACV-Capital/qpr-autofill",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ACV-Capital/qpr-autofill.git"
+  },
+  "agents": [
+    "./agents/qpr-macro.md",
+    "./agents/qpr-sssg.md"
+  ],
+  "skills": [
+    "./skills/qpr-research-rules",
+    "./skills/qpr-sheets-api",
+    "./skills/qpr-source-verification"
+  ]
+}
