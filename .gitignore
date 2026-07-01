@@ -31,3 +31,7 @@ build/
 
 # local cycle outputs (keep sources/ and notes/ but ignore generated)
 *.tmp
+
+# Note: qpr-autofill is tested using ~/Documents/Projects/macro-research/.venv
+# (Python 3.11.15, already has gspread + pyyaml + bs4 + pytest). On a fresh
+# machine, recreate with: python3.11 -m venv .venv && .venv/bin/pip install -e ".[dev]"
