@@ -73,6 +73,7 @@ Run a quarterly research cycle:
   - `qpr-research-rules` — the 9 hard rules (loaded by both agents)
   - `qpr-sheets-api` — read/write/color a working Google Sheet
   - `qpr-source-verification` — open a URL, confirm a value, classify its tier
+  - `qpr-source-verification/scripts/verify.sh` — runnable shell wrapper
 - **`qpr/`** — Python package:
   - `classify.py` — cell-level match/differ/null with tolerance
   - `tickers.py` — canonical SEA-5 retail ticker manifest loader
@@ -83,10 +84,10 @@ Run a quarterly research cycle:
   - `sheets.py` — gspread wrapper (read/write cell, set fill)
   - `cli.py` — entry point: `run-quarter`, `verify-results`, `preflight`, `write-sheet`, `update-channel-memory`, `grade`, `grade-e2e`, `e2e-run`
 - **`qpr/data/channel_memory.json`** — the "try this first" list per ticker,
-  seeded from the Q1'26 cycle
-- **`examples/tickers.yaml`** — SEA-5 retail universe (25-30 tickers)
+  seeded from the Q1'26 cycle (17 retail + 5 macro entries)
+- **`examples/tickers.yaml`** — SEA-5 retail universe (25 tickers)
 - **`examples/working_q1_2026.json`** — redacted Q1'26 working data
-- **`tests/`** — pytest suite (TDD on every module)
+- **`tests/`** — pytest suite, 61 tests, all passing
 
 ## Hard Rules
 
